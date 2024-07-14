@@ -5,7 +5,7 @@ import hackathonImage from "./images/example.jpg";
 
 export default function About() {
   return (
-    <div className="py-16 relative" style={{ backgroundColor: "#1B1B19" }}>
+    <div className="py-16 relative" style={{ backgroundColor: "#020b12" }}>
       <div className="container mx-auto px-6 lg:px-8">
         <div className="relative">
           <div className="absolute inset-0 flex justify-center items-center z-0 items-start">

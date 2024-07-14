@@ -4,6 +4,8 @@ import Landing from "./Components/landing";
 import Navbar from "./Components/navbar";
 import About from "./Components/about";
 import Stacks from "./Components/stacks";
+import Timeline from "./Components/timeline";
+import Footer from "./Components/footer";
 function App() {
   return (
     <div >
@@ -21,6 +23,9 @@ function App() {
       <Landing />
       <About/>
       <Stacks/>
+      <Timeline/>
+      <Footer/>
+      
     </div>
   );
 }
