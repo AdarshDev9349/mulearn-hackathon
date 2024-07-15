@@ -25,7 +25,7 @@ export default function Landing() {
             </a>
             <a
               href="#sponsor"
-              className="rounded-md bg-white text-black border-2 px-3.5 py-2.5 lg:text-lg  font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md bg-white text-black border-2 px-3.5 py-2.5 lg:text-lg  font-semibold  shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Sponsor Us
             </a>

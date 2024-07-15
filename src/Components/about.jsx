@@ -26,7 +26,7 @@ export default function About() {
               </div>
               <div className="lg:flex-1 lg:w-1/2 lg:mt-0 mt-8">
                 <img
-                  className="w-full h-auto object-cover rounded-lg shadow-md"
+                  className="w-200 h-80 object-cover rounded-lg shadow-md"
                   src={mulearnImage}
                   alt="MuLearn UCEK"
                 />
@@ -46,7 +46,7 @@ export default function About() {
               </div>
               <div className="lg:flex-1 lg:w-1/2 lg:mt-0 mt-8 lg:order-1">
                 <img
-                  className="w-full h-auto object-cover rounded-lg shadow-md"
+                  className="w-200 h-80 object-cover rounded-lg shadow-md"
                   src={hackathonImage}
                   alt="Hackathon"
                 />
