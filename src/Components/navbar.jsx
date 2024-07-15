@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const navigation = [
   { name: 'Home', href: '#' },
   { name: 'About', href: '#' },
+  { name: 'Stacks', href: '#' },
   { name: 'Sponsors', href: '#' },
   { name: 'FAQ', href: '#' },
 ];
@@ -23,7 +24,7 @@ const menuVariants = {
     },
   },
   closed: {
-    x: '100%',
+    x: '-100%',
     transition: {
       ease: [0.08, 0.65, 0.53, 0.96],
       duration: 0.6,
@@ -42,7 +43,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="absolute inset-x-0  top-0 z-50 lg:flex w-full justify-center">
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
          
@@ -57,25 +58,21 @@ export default function Navbar() {
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-16">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-m font-semibold leading-6 text-white">
+            <a key={item.name} href={item.href} className="text-m font-semibold leading-6 text-white transform transition duration-500 hover:scale-105">
               {item.name}
             </a>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-m font-semibold leading-6 text-white">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
+
       </nav>
 
       <AnimatePresence>
         {mobileMenuOpen && (
           <Dialog as={motion.div} open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
             <motion.div className="fixed inset-0 z-50 bg-black bg-opacity-50" />
-            <DialogPanel as={motion.div} initial="closed" animate="open" exit="closed" variants={menuVariants} className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <DialogPanel as={motion.div} initial="closed" animate="open" exit="closed" variants={menuVariants} className="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Your Company</span>
@@ -90,29 +87,22 @@ export default function Navbar() {
                   <XMarkIcon aria-hidden="true" className="h-6 w-6" />
                 </button>
               </div>
-              <div className="mt-6 flow-root">
-                <motion.div initial="closed" animate="open" exit="closed" variants={menuVariants} className="-my-6 divide-y divide-gray-500/10">
-                  <div className="space-y-2 py-6">
+              <div className="mt-36 flow-root flex ">
+                <motion.div initial="closed" animate="open" exit="closed" variants={menuVariants} className="-my-6 divide-y divide-gray-500/10 flex justify-center items-center">
+                  <div className="space-y-2 py-6  ">
                     {navigation.map((item) => (
                       <motion.a
+                        whileTap={{scale:1.1}}
                         key={item.name}
                         href={item.href}
                         variants={itemVariants}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        className="-mx-3 block flex justify-center rounded-lg px-3 py-2 text-base font-semibold leading-7 text-lg text-gray-900 hover:bg-gray-50"
                       >
                         {item.name}
                       </motion.a>
                     ))}
                   </div>
-                  <div className="py-6">
-                    <motion.a
-                      href="#"
-                      variants={itemVariants}
-                      className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                      Log in
-                    </motion.a>
-                  </div>
+
                 </motion.div>
               </div>
             </DialogPanel>

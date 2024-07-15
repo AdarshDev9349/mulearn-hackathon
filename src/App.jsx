@@ -5,6 +5,7 @@ import Navbar from "./Components/navbar";
 import About from "./Components/about";
 import Stacks from "./Components/stacks";
 import Timeline from "./Components/timeline";
+import FAQ from "./Components/faq";
 import Footer from "./Components/footer";
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <About/>
       <Stacks/>
       <Timeline/>
+      <FAQ/>
       <Footer/>
       
     </div>

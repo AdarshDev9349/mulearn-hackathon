@@ -10,9 +10,10 @@ export default function Landing() {
 
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-55">
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-6xl" style={{color: "#FFFFFF"}}>
+          <div className=""style={{ background: 'rgba(2, 11, 18,0.6)',padding:"20px",borderRadius:"40px" }}>
+          <h1  className=" text-4xl font-bold tracking-tight sm:text-6xl"style={{ color: "#E292E7" }}>
             Join the Ultimate 24hr Hackathon
-          </h1>
+          </h1></div>
           <p className="mt-6 text-lg leading-8" style={{color: "#EEE8DA"}}>
             Unleash your creativity, solve real-world problems, and collaborate with fellow tech enthusiasts.
           </p>

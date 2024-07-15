@@ -40,6 +40,21 @@
     position: absolute;
     z-index: 0;
   }
+  .custom-heading3{
+    color: #ffffff08;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(6rem, 22dvw, 60rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 20px;
+    position: absolute;
+    z-index: 0;
+
+
+  }
 @media (max-width: 721px) {
     .custom-heading {
         letter-spacing: -6px;
