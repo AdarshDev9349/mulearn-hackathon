@@ -43,7 +43,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="absolute inset-x-0  top-0 z-50 lg:flex w-full justify-center">
+    <header className="absolute inset-x-0  top-0 z-50 lg:flex w-full justify-center"style={{  background: 'rgba(2, 11, 18,0.6)' }}>
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
          

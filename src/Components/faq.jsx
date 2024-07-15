@@ -3,29 +3,33 @@ import React, { useState } from 'react';
 const FAQ = () => {
   const faqData = [
     {
-      question: "What is RenVnza?",
-      answer: "RenVnza '24 is the techno-cultural fest hosted by the University College of Engineering Kariavattom from July 3-5. MuLearn UCEK will be hosting the events mentioned on this website during the fest."
-    },
-    {
-      question: "Who can participate in the events?",
-      answer: "All the events are designed with college students in mind. However, anyone who finds the event intriguing is welcome to attend."
-    },
-    {
-      question: "Are all events free?",
-      answer: "Except for the Dev Expo and Nexus Conclave, all events hosted by MuLearn UCEK for RenVnza have a registration fee."
-    },
-    {
-      question: "How many days are the events?",
-      answer: "RenVnza '24' will take place from July 3 to 5, with events scheduled between these days. Only the Dev Expo will take place on all three days of the fest."
-    },
-    {
-      question: "Will I get certificates for taking part in the events?",
-      answer: "Yes, certificates will be provided for all the sessions hosted during the fest."
-    },
-    {
-      question: "Will we be awarded KTU points for participating?",
-      answer: "Absolutely! Participants will be awarded 20 KTU points upon completion of the event. Additionally, you'll receive certificates on the spot right after the event concludes, along with some exclusive cool merchandise."
-    }
+        "question": "What is the MuLearn UCEK Hackathon?",
+        "answer": "The MuLearn UCEK Hackathon is a 24-hour event designed to foster innovation and collaboration among technology-driven students. It provides a platform to engage in real projects and push technological boundaries."
+      },
+      {
+        "question": "Who can participate?",
+        "answer": "The hackathon is open to all students with a passion for technology and innovation, regardless of experience level."
+      },
+      {
+        "question": "What types of projects are encouraged?",
+        "answer": "Participants are encouraged to work on innovative projects that address real-world challenges, bringing unique ideas and solutions to life."
+      },
+      {
+        "question": "How can I join the MuLearn UCEK Hackathon?",
+        "answer": "Register via our official website or the provided registration link. Stay updated for registration dates and deadlines."
+      },
+      {
+        "question": "Can I participate individually in the hackathon?",
+        "answer": "Yes, participants can join individually or in teams of up to 4 members."
+      },
+      {
+        "question": "How do I know my registration is confirmed?",
+        "answer": "The organizing team will approve and confirm your participation. Shortlisted teams will receive a confirmation email."
+      },
+      {
+        "question": "What are the perks of participating?",
+        "answer": "Participants can expect access to mentorship from industry experts, valuable networking opportunities, recognition for innovative projects, and exclusive tech talks."
+      }
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);
@@ -55,7 +59,7 @@ const FAQ = () => {
                 activeIndex === index ? 'max-h-full' : 'max-h-0'
               }`}
             >
-              <p className="text-lg"style={{ color: "#EEE8DA" }} >{faq.answer}</p>
+              <p className="lg:text-lg text-m "style={{ color: "#EEE8DA" }} >{faq.answer}</p>
             </div>
           </div>
         ))}

@@ -21,7 +21,7 @@ const Timeline = () => {
         <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
           <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
             <p
-              className="ml-2 text-yellow-300 uppercase tracking-loose"
+              className=" text-yellow-300 uppercase tracking-loose"
               style={{ color: "#E292E7" }}
             >
               Working Process
@@ -30,20 +30,20 @@ const Timeline = () => {
               className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2"
               style={{ color: "#EEE8DA" }}
             >
-              Working Process of Fest
+              Timeline for the Hackathon
             </p>
             <p
               className="text-sm md:text-base text-gray-50 mb-4"
               style={{ color: "#EEE8DA" }}
             >
-              Here’s your guide to the tech fest 2021 process. Go through all
-              the steps to know the exact process of the fest.
+              Here’s your guide to the hackathon 2024 process. Go through all
+              the steps to know the exact process of the event.
             </p>
             <a
               href="#"
               className="bg-transparent mr-auto hover:bg-black text-white hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-white hover:border-transparent"
             >
-              Explore Now
+              Register Now
             </a>
           </div>
           <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
@@ -76,7 +76,7 @@ const Timeline = () => {
                       className="mb-3 text-base text-yellow-300"
                       style={{ color: "#EEE8DA" }}
                     >
-                      1-6 May, 2021
+                      19 July - 2 August, 2024
                     </p>
                     <h4
                       className="mb-3 font-bold text-lg md:text-2xl"
@@ -85,12 +85,10 @@ const Timeline = () => {
                       Registration
                     </h4>
                     <p
-                      className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100"
+                      className="text-sm md:text-base text-right leading-snug text-gray-50 text-opacity-100"
                       style={{ color: "#EEE8DA" }}
                     >
-                      Pick your favourite event(s) and register in that event by
-                      filling the form corresponding to that event. It's that
-                      easy :)
+                     Register for the hackathon as a team.Only one person from each team is required to register.Don't forget to join the whatsapp group for more updates.
                     </p>
                   </div>
                 </div>
@@ -109,21 +107,19 @@ const Timeline = () => {
                       className="mb-3 text-base text-yellow-300"
                       style={{ color: "#EEE8DA" }}
                     >
-                      6-9 May, 2021
+                      15 August, 2024
                     </p>
                     <h4
                       className="mb-3 font-bold text-lg md:text-2xl"
                       style={{ color: "#E292E7" }}
                     >
-                      Participation
+                      Shortlist Announcement
                     </h4>
                     <p
                       className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100"
                       style={{ color: "#EEE8DA" }}
                     >
-                      Participate online. The links for your registered events
-                      will be sent to you via email and WhatsApp groups. Use
-                      those links and show your talent.
+                      The shortlisted teams will be announced. Keep an eye on your email and our official communication channels for updates.
                     </p>
                   </div>
                 </div>
@@ -142,21 +138,19 @@ const Timeline = () => {
                       className="mb-3 text-base text-yellow-300"
                       style={{ color: "#EEE8DA" }}
                     >
-                      10 May, 2021
+                      24-25 August, 2024
                     </p>
                     <h4
                       className="mb-3 font-bold text-lg md:text-2xl"
                       style={{ color: "#E292E7" }}
                     >
-                      Result Declaration
+                      Hackathon
                     </h4>
                     <p
                       className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100"
                       style={{ color: "#EEE8DA" }}
                     >
-                      The ultimate genius will be revealed by our judging panel
-                      on 10th May, 2021 and the results will be announced on the
-                      WhatsApp groups and will be mailed to you.
+Participate in the hackathon on site. Check-in details and event locations will be communicated to you. Be prepared to showcase your skills and collaborate with fellow participants.
                     </p>
                   </div>
                 </div>
@@ -175,7 +169,7 @@ const Timeline = () => {
                       className="mb-3 text-base text-yellow-300"
                       style={{ color: "#EEE8DA" }}
                     >
-                      12 May, 2021
+                      26 August, 2024
                     </p>
                     <h4
                       className="mb-3 font-bold text-lg md:text-2xl text-left"
