@@ -2,7 +2,7 @@ import Timer from "./timer";
 
 export default function Landing() {
   return (
-    <div className="relative isolate px-6 pt-14 lg:px-8 h-screen">
+    <div id='home' className="relative isolate px-6 pt-14 lg:px-8 h-screen">
     
       <div className="absolute inset-0 -z-10 overflow-hidden">
        

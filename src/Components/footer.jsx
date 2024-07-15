@@ -1,53 +1,57 @@
 import React from "react";
-
+import { Link as Scroll } from 'react-scroll';
 const Footer = () => {
   return (
     <section className="bg-black"style={{  background: 'rgba(2, 11, 18,0.6)' }}>
       <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <nav className="flex flex-wrap justify-center -mx-5 -my-2">
           <div className="px-5 py-2">
-            <a
+          <Scroll to="home" smooth={true}>
+             <a
               href="#"
               className="text-base leading-6 text-white hover:text-gray-400"
             >
               Home
-            </a>
+            </a></Scroll> 
           </div>
           <div className="px-5 py-2">
+            <Scroll to="about" smooth={true}>
             <a
               href="#"
               className="text-base leading-6 text-white hover:text-gray-400"
             >
               About
-            </a>
+            </a></Scroll>
           </div>
           <div className="px-5 py-2">
+            <Scroll to="stacks" smooth={true}>
             <a
               href="#"
               className="text-base leading-6 text-white hover:text-gray-400"
             >
               Stacks
-            </a>
+            </a></Scroll>
           </div>
           <div className="px-5 py-2">
+            <Scroll to="time" smooth={true}>
             <a
               href="#"
               className="text-base leading-6 text-white hover:text-gray-400"
             >
-              Sponsors
-            </a>
+              Timeline
+            </a></Scroll>
           </div>
           <div className="px-5 py-2">
-            <a
+           <Scroll to="faq" smooth={true}><a
               href="#"
               className="text-base leading-6 text-white hover:text-gray-400"
             >
               FAQ
-            </a>
+            </a></Scroll> 
           </div>
         </nav>
         <div className="flex justify-center mt-8 space-x-6">
-          <a href="#" className="text-gray-400 hover:text-gray-500">
+          <a href="https://www.linkedin.com/company/mulearnucek" className="text-gray-400 hover:text-gray-500">
             <span className="sr-only">Linkedln</span>
             <svg
               className="w-6 h-6"
@@ -58,7 +62,7 @@ const Footer = () => {
               <path d="M22.23 0H1.77C0.79 0 0 0.78 0 1.75v20.5C0 23.22 0.79 24 1.77 24h20.5c.98 0 1.77-.78 1.77-1.75V1.75C24 0.78 23.21 0 22.23 0zM7.12 20.2H3.56V9H7.1v11.2h.02zM5.34 7.7a2.06 2.06 0 110-4.12 2.06 2.06 0 110 4.12zm14.88 12.5h-3.56v-5.53c0-1.32-.02-3.02-1.84-3.02-1.84 0-2.13 1.43-2.13 2.92v5.63h-3.56V9h3.42v1.53h.05c.48-.92 1.65-1.88 3.39-1.88 3.62 0 4.29 2.38 4.29 5.47v6.08h-.02z" />
             </svg>
           </a>
-          <a href="#" className="text-gray-400 hover:text-gray-500">
+          <a href="https://www.instagram.com/mulearn.ucek/" className="text-gray-400 hover:text-gray-500">
             <span className="sr-only">Instagram</span>
             <svg
               className="w-6 h-6"
@@ -73,7 +77,7 @@ const Footer = () => {
               ></path>
             </svg>
           </a>
-          <a href="#" className="text-gray-400 hover:text-gray-500">
+          <a href="https://x.com/MulearnU" className="text-gray-400 hover:text-gray-500">
             <span className="sr-only">Twitter</span>
             <svg
               className="w-6 h-6"
@@ -84,8 +88,8 @@ const Footer = () => {
               <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.852.07 4.107 4.107 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
             </svg>
           </a>
-          <a href="#" className="text-gray-400 hover:text-gray-500">
-            <span className="sr-only">Twitter</span>
+          <a href="https://github.com/Mulearn-ucek" className="text-gray-400 hover:text-gray-500">
+            <span className="sr-only">Github</span>
             <svg
               className="w-6 h-6"
               aria-hidden="true"

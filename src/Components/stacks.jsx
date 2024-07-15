@@ -26,7 +26,8 @@ const Stacks = () => {
         animate={{ opacity: 1, transition: { duration: 1 } }}
         whileHover={{ scale: 1.05, boxShadow: "0px 5px 30px #207" }}
         onTap={() => setVisible(!isVisible)}
-        className="card relative cursor-pointer bg-transparent border-2 rounded-xl w-full sm:w-72 md:w-90 h-40 sm:h-60 md:h-65 perspective-1000 justify-self-center"
+        className="card stacks mt-12 relative cursor-pointer bg-transparent border-2 rounded-xl w-full sm:w-72 md:w-90 h-40 sm:h-60 md:h-65 perspective-1000 justify-self-center"
+        id="stacks"
       >
         <AnimatePresence>
           {isVisible && (

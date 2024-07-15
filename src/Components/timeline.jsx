@@ -13,7 +13,7 @@ const Timeline = () => {
     restDelta: 0.001,
   });
   return (
-    <section ref={ref}>
+    <section id="time" ref={ref}>
       <div
         className="bg-black text-white py-8"
         style={{ backgroundColor: "#020b12" }}

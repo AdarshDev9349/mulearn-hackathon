@@ -4,46 +4,52 @@ import { useState, useEffect } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link as Scroll } from 'react-scroll';
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Stacks', href: '#' },
-  { name: 'Sponsors', href: '#' },
-  { name: 'FAQ', href: '#' },
+  { name: 'Home', href: '#',to:'home' },
+  { name: 'About', href: '#about',to:'about' },
+  { name: 'Stacks', href: '#',to:'stacks' },
+  { name: 'Timeline', href: '#',to:'time' },
+  { name: 'FAQ', href: '#',to:'faq' },
 ];
+
+const itemVariants = {
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 300, damping: 24 }
+  },
+  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } }
+};
 
 const menuVariants = {
   open: {
-    x: 0,
+    clipPath: "inset(10% 10% 10% 10% round 10px)",
     transition: {
-      ease: [0.08, 0.65, 0.53, 0.96],
-      duration: 0.6,
-      staggerChildren: 0.05,
-      delayChildren: 0.2,
-    },
+      type: "spring",
+      bounce: 0,
+      duration: 0.7,
+      delayChildren: 0.3,
+      staggerChildren: 0.05
+    }
   },
   closed: {
-    x: '-100%',
+    clipPath: "inset(10% 50% 90% 50% round 10px)",
     transition: {
-      ease: [0.08, 0.65, 0.53, 0.96],
-      duration: 0.6,
-      staggerChildren: 0.05,
-      staggerDirection: -1,
-    },
-  },
+      type: "spring",
+      bounce: 0,
+      duration: 0.3
+    }
+  }
 };
 
-const itemVariants = {
-  open: { opacity: 1, filter: 'blur(0px)', scale: 1 },
-  closed: { opacity: 0, filter: 'blur(10px)', scale: 0.5 },
-};
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="absolute inset-x-0  top-0 z-50 lg:flex w-full justify-center"style={{  background: 'rgba(2, 11, 18,0.6)' }}>
+    <header  className="home fixed inset-x-0  top-0 z-50 lg:flex w-full justify-center"style={{  background: 'rgba(2, 11, 18,0.6)' }}>
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
          
@@ -60,9 +66,11 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex lg:gap-x-16">
           {navigation.map((item) => (
+            <Scroll to={item.to} smooth={true}>
             <a key={item.name} href={item.href} className="text-m font-semibold leading-6 text-white transform transition duration-500 hover:scale-105">
               {item.name}
             </a>
+            </Scroll>
           ))}
         </div>
 
@@ -72,40 +80,43 @@ export default function Navbar() {
         {mobileMenuOpen && (
           <Dialog as={motion.div} open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
             <motion.div className="fixed inset-0 z-50 bg-black bg-opacity-50" />
-            <DialogPanel as={motion.div} initial="closed" animate="open" exit="closed" variants={menuVariants} className="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-              <div className="flex items-center justify-between">
-                <a href="#" className="-m-1.5 p-1.5">
-                  <span className="sr-only">Your Company</span>
-                  {/* Add your logo here */}
-                </a>
-                <button
-                  type="button"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="-m-2.5 rounded-md p-2.5 text-gray-700"
+            <div className="fixed inset-0 z-50 flex items-center justify-center">
+              <DialogPanel as={motion.div} initial="closed" animate="open" exit="closed" variants={menuVariants}  className="w-3/4 max-w-sm overflow-y-auto bg-white px-10  sm:ring-1 sm:ring-gray-900/10">
+                <div className="flex items-center justify-between">
+                  <a href="#" className="-m-1.5 p-1.5">
+                    <span className="sr-only">Your Company</span>
+                    {/* Add your logo here */}
+                  </a>
+                  <motion.button
+                  variants={itemVariants}
+                    type="button"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="relative top-12 rounded-md  text-gray-700"
+                  >
+                    <span className="sr-only">Close menu</span>
+                    <XMarkIcon aria-hidden="true" className="h-6 w-6" />
+                  </motion.button>
+                </div>
+                <motion.ul
+                  variants={menuVariants}
+                  style={{ pointerEvents: mobileMenuOpen ? "auto" : "none" }}
+                  className="mt-10 mb-10 flow-root"
                 >
-                  <span className="sr-only">Close menu</span>
-                  <XMarkIcon aria-hidden="true" className="h-6 w-6" />
-                </button>
-              </div>
-              <div className="mt-36 flow-root flex ">
-                <motion.div initial="closed" animate="open" exit="closed" variants={menuVariants} className="-my-6 divide-y divide-gray-500/10 flex justify-center items-center">
-                  <div className="space-y-2 py-6  ">
+                  <div className="space-y-2 py-6">
                     {navigation.map((item) => (
-                      <motion.a
-                        whileTap={{scale:1.1}}
-                        key={item.name}
-                        href={item.href}
-                        variants={itemVariants}
-                        className="-mx-3 block flex justify-center rounded-lg px-3 py-2 text-base font-semibold leading-7 text-lg text-gray-900 hover:bg-gray-50"
-                      >
-                        {item.name}
-                      </motion.a>
+                      <motion.li key={item.name} variants={itemVariants}>
+                        <Scroll to={item.to} smooth={true}><a
+                          href={item.href}
+                          className="-mx-3 block flex justify-center rounded-lg px-3 py-2 text-base font-semibold leading-7 text-lg text-gray-900 hover:bg-gray-50"
+                        >
+                          {item.name}
+                        </a></Scroll>
+                      </motion.li>
                     ))}
                   </div>
-
-                </motion.div>
-              </div>
-            </DialogPanel>
+                </motion.ul>
+              </DialogPanel>
+            </div>
           </Dialog>
         )}
       </AnimatePresence>
