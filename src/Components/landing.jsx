@@ -1,14 +1,14 @@
 import Timer from "./timer";
-
+import ScrollToBottom from "./arrow";
 export default function Landing() {
   return (
-    <div id='home' className="relative isolate px-6 pt-14 lg:px-8 h-screen">
+    <div id='home' className="relative isolate px-6 pt-24 lg:px-8 lg:pt-12 h-screen">
     
       <div className="absolute inset-0 -z-10 overflow-hidden">
        
       </div>
 
-      <div className="mx-auto max-w-2xl py-12 sm:py-28 lg:py-34">
+      <div className="mx-auto max-w-2xl py-17 sm:py-28 lg:py-34">
         <div className="text-center">
           <div className=""style={{ background: 'rgba(2, 11, 18,0.7)',padding:"20px",borderRadius:"40px" }}>
           <h1  className=" text-4xl font-bold tracking-tight sm:text-6xl"style={{ color: "#E292E7" }}>
@@ -39,6 +39,7 @@ export default function Landing() {
         aria-hidden="true"
         className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
       ></div>
+      <ScrollToBottom/>
     </div>
   );
 }

@@ -37,7 +37,7 @@ function CountdownTimer() {
   };
 
   return (
-    <div className="flex  justify-center items-center p-6 mt-2 rounded-lg shadow-md text-white bg-gray-900 animate-pulse">
+    <div className="flex  justify-center items-center p-6 mt-2 rounded-lg shadow-md text-white bg-gray-900">
       {timeLeft.seconds < 0 ? (
         <div className="text-xl font-bold text-center text-red-500">Time's up!</div>
       ) : (
