@@ -1,5 +1,6 @@
 import Timer from "./timer";
 import ScrollToBottom from "./arrow";
+import logo from "./images/logo.svg"
 export default function Landing() {
   return (
     <div id='home' className="relative isolate px-6 pt-24 lg:px-8 lg:pt-12 h-screen">
@@ -9,13 +10,11 @@ export default function Landing() {
       </div>
 
       <div className="mx-auto max-w-2xl py-17 sm:py-28 lg:py-34">
-        <div className="text-center">
-          <div className=""style={{ background: 'rgba(2, 11, 18,0.7)',padding:"20px",borderRadius:"40px" }}>
-          <h1  className=" text-4xl font-bold tracking-tight sm:text-6xl"style={{ color: "#E292E7" }}>
-            Join the Ultimate 24hr Hackathon
-          </h1></div>
-          <p className="mt-3 text-lg leading-8" style={{color: "#EEE8DA"}}>
-            Unleash your creativity, solve real-world problems, and collaborate with fellow tech enthusiasts.
+        <div className="text-center" style={{display:"flex",flexDirection:"column"}}>
+          
+          <img className=" lg:w-5/6 w-full self-center" src={logo} alt="" />
+          <p className="mt-3 lg:text-xl leading-8" style={{color: "#EEE8DA"}}>
+            Hack a way to brew coffee in your teapot
           </p>
           <div className="flex justify-center pt-2"><Timer/></div>
            

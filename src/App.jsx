@@ -37,7 +37,7 @@ function App() {
         autoPlay
         loop
         muted
-        className={`fixed inset-0 h-full w-full h-screen object-cover -z-10 ${isLoaded ? '' : 'hidden'}`}
+        className={`fixed inset-0 h-full w-full object-cover -z-10 ${isLoaded ? '' : 'hidden'}`}
       >
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
