@@ -4,7 +4,11 @@ import hackathonImage from "./images/example.jpg";
 
 export default function About() {
   return (
-    <div className="py-16 relative about"  id="about"style={{ backgroundColor: "#020b12" }}>
+    <div
+      className="py-16 relative about"
+      id="about"
+      style={{ backgroundColor: "#020b12" }}
+    >
       <div className="container mx-auto px-6 lg:px-8">
         <div className="absolute inset-0 flex justify-center items-center z-0">
           <h1 className="custom-heading">ABOUT</h1>
@@ -20,7 +24,10 @@ export default function About() {
                 >
                   About MuLearn UCEK
                 </h2>
-                <p className="lg:text-lg text-m text-justify" style={{ color: "#EEE8DA" }}>
+                <p
+                  className="lg:text-lg text-m text-justify"
+                  style={{ color: "#EEE8DA" }}
+                >
                   Welcome to MuLearn UCEK, your gateway to transformative
                   education. At MuLearn, we are dedicated to revolutionizing
                   education through a paradigm shift that empowers self-directed
@@ -53,27 +60,27 @@ export default function About() {
                 >
                   About the Hackathon
                 </h2>
-                <p className="lg:text-lg text-m text-justify" style={{ color: "#EEE8DA" }}>
-                  Welcome to the MuLearn UCEK 24-Hour Hackathon, an innovative
-                  platform for students to explore and excel in technology since
-                  its inception. MuLearn UCEK is dedicated to fostering a
-                  collaborative community where participants can engage in real
-                  projects and bring their creative ideas to life. In this
-                  dynamic environment, students have the opportunity to work
-                  alongside like-minded peers, exchange insights, and make a
-                  significant impact on the future of technology. Whether you're
-                  an experienced developer or an enthusiastic learner, this
-                  hackathon provides a stage for meaningful collaboration and
-                  groundbreaking innovation. Join the MuLearn UCEK Hackathon
-                  today and be part of a transformative journey where creativity
-                  and technology converge to shape the future. Together, let's
-                  redefine what's possible.
+                <p
+                  className="lg:text-lg text-m text-justify"
+                  style={{ color: "#EEE8DA" }}
+                >
+                  Welcome to Error 418, the inaugural 36-hour hackathon hosted
+                  by MuLearn UCEK. Building on our successful events, Error 418
+                  offers a dynamic platform for students to explore technology
+                  and innovation. This event brings together a collaborative
+                  community where participants can work on real projects, share
+                  knowledge, and push the boundaries of what's possible. Whether
+                  you're a seasoned developer or a beginner, Error 418 provides
+                  an inclusive space for meaningful collaboration and pioneering
+                  innovation. Join us and be part of a transformative journey
+                  where creativity and technology converge. Help shape the
+                  future of innovation at Error 418 Hackathon.
                 </p>
               </div>
             </div>
             <div className="lg:flex-1 lg:w-1/2 mt-12 lg:mt-0 lg:order-1 flex justify-center">
               <img
-                className="w-full h-80 object-cover rounded-lg shadow-md"
+                className=" h-80 object-cover rounded-lg shadow-md"
                 src={hackathonImage}
                 alt="Hackathon"
               />
