@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { useInView } from "react-intersection-observer";
 const stacks = [
   { title: "Web Development", description: "Build modern web applications." },
   {
