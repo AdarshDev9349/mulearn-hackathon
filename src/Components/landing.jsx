@@ -3,7 +3,7 @@ import ScrollToBottom from "./arrow";
 import logo from "./images/logo.svg"
 export default function Landing() {
   return (
-    <div id='home' className="relative isolate px-6 pt-24 lg:px-8 lg:pt-12 lg:h-screen h-[100vh]">
+    <div id='home' className="relative isolate px-6 pt-24 lg:px-8 lg:pt-12 lg:h-screen h-[90vh]">
     
       <div className="absolute inset-0 -z-10 overflow-hidden">
        
