@@ -10,7 +10,7 @@ export default function Landing() {
       </div>
 
       <div className="mx-auto max-w-2xl py-17 sm:py-28 lg:py-34">
-        <div className="text-center" style={{display:"flex",flexDirection:"column"}}>
+        <div className="text-center lg:mt-10 mt-20" style={{display:"flex",flexDirection:"column"}}>
           
           <img className=" lg:w-5/6 w-full self-center" src={logo} alt="" />
           <p className="mt-3 lg:text-xl leading-8" style={{color: "#EEE8DA"}}>
