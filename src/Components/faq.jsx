@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const FAQ = () => {
   const faqData = [
     {
-        "question": "What is the MuLearn UCEK Hackathon?",
+        "question": "What is the ERROR_418 Hackathon?",
         "answer": "The MuLearn UCEK Hackathon is a 24-hour event designed to foster innovation and collaboration among technology-driven students. It provides a platform to engage in real projects and push technological boundaries."
       },
       {
@@ -15,7 +15,7 @@ const FAQ = () => {
         "answer": "Participants are encouraged to work on innovative projects that address real-world challenges, bringing unique ideas and solutions to life."
       },
       {
-        "question": "How can I join the MuLearn UCEK Hackathon?",
+        "question": "How can I join the ERROR_418 Hackathon?",
         "answer": "Register via our official website or the provided registration link. Stay updated for registration dates and deadlines."
       },
       {
