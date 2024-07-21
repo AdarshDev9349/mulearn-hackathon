@@ -6,7 +6,7 @@ const stacks = [
   { title: "Stay Tuned..", description: "ERROR_418" },
   {
     title: "Stay Tuned..",
-    description: "ERROR_418.",
+    description: "ERROR_418",
   },
   { title: "Stay Tuned..", description: "ERROR_418" },
   { title: "Stay Tuned..", description: "ERROR_418" },

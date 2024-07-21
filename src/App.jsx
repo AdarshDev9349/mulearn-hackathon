@@ -9,12 +9,15 @@ import Timeline from "./Components/timeline";
 import FAQ from "./Components/faq";
 import Footer from "./Components/footer";
 import Loading from "./Components/loader";
+import TaskList from "./Components/task";
+import Login from "./Components/login";
+import Sponsors from "./Components/sponsors";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
-
+  const [token, setToken] = useState(null);
   useEffect(() => {
     const videoElement = document.querySelector("video");
-
+    
     const handleLoadedData = () => {
       setIsLoaded(true);
     };
@@ -48,9 +51,11 @@ function App() {
           <Landing />
           <About /> 
           <Stacks />
+          <Sponsors/>
           <Timeline />
           <FAQ />
           <Footer />
+        {/* {token ? <TaskList token={token} /> : <Login setToken={setToken} />} */}
         
         </>
       )}

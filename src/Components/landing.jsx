@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import Timer from "./timer";
 import ScrollToBottom from "./arrow";
@@ -14,6 +15,17 @@ const fadeIn = {
 };
 
 export default function Landing() {
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+
   return (
     <div id='home' className="relative isolate px-6 pt-24 lg:px-8 lg:pt-12 lg:h-screen h-[90vh]">
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -52,21 +64,21 @@ export default function Landing() {
           </motion.div>
 
           <motion.div 
-            className="mt-10 flex items-center justify-center gap-x-6"
+            className="mt-10  self-center space-y-34 "
             initial="hidden" 
             animate="visible" 
             variants={fadeIn} 
             transition={{ duration: 1, delay: 1.5 }}
           >
-            <a
-              href="#register"
-              className="rounded-md bg-transparent border-2 px-3.5 py-2.5 lg:text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Register Now
-            </a>
+            <div 
+              className="apply-button" 
+              data-hackathon-slug="error-418" 
+              data-button-theme="dark-inverted"
+              style={{ height: '44px', width: '312px' }}
+            ></div>
             <a
               href="#sponsor"
-              className="rounded-md bg-white text-black border-2 px-3.5 py-2.5 lg:text-lg font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className=" rounded-md bg-white text-black border-2 px-3.5 py-2.5 lg:text-lg font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               <a href="mailto:mulearnucek@gmail.com">Contact Us</a>
             </a>
