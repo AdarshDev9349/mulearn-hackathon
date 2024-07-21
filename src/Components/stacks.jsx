@@ -3,16 +3,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const stacks = [
-  { title: "Web Development", description: "Build modern web applications." },
+  { title: "Stay Tuned..", description: "ERROR_418" },
   {
-    title: "Mobile Development",
-    description: "Create mobile apps for Android and iOS.",
+    title: "Stay Tuned..",
+    description: "ERROR_418.",
   },
-  { title: "Data Science", description: "Analyze and visualize data." },
-  { title: "Machine Learning", description: "Develop intelligent systems." },
-  { title: "Blockchain", description: "Work with decentralized applications." },
+  { title: "Stay Tuned..", description: "ERROR_418" },
+  { title: "Stay Tuned..", description: "ERROR_418" },
+  { title:"Stay Tuned..", description: "ERROR_418" },
   {
-    title: "DevOps",
+    title:"Stay Tuned..",
     description: "Automate and improve development processes.",
   },
 ];
