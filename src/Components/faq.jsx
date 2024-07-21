@@ -52,7 +52,7 @@ const FAQ = () => {
               className="flex justify-between items-center cursor-pointer"
               onClick={() => toggleFAQ(index)}
             >
-              <h3 className="text-xl font-medium" style={{ color: "#E292E7" }}>{faq.question}</h3>
+              <h3 className="text-lg font-medium" style={{ color: "#E292E7" }}>{faq.question}</h3>
               <span className="text-3xl">{activeIndex === index ? '-' : '+'}</span>
             </div>
             <AnimatePresence>
