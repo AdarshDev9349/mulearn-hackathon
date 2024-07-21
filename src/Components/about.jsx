@@ -1,6 +1,6 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import mulearnImage from './images/permute.png';
 import hackathonImage from './images/example.jpg';
 
@@ -25,22 +25,15 @@ const staggerContainer = {
 };
 
 export default function About() {
-  const controls1 = useAnimation();
+  const controls = useAnimation();
   const [ref1, inView1] = useInView({ triggerOnce: true });
-  const controls2 = useAnimation();
   const [ref2, inView2] = useInView({ triggerOnce: true });
 
   useEffect(() => {
-    if (inView1) {
-      controls1.start('visible');
+    if (inView1 || inView2) {
+      controls.start('visible');
     }
-  }, [controls1, inView1]);
-
-  useEffect(() => {
-    if (inView2) {
-      controls2.start('visible');
-    }
-  }, [controls2, inView2]);
+  }, [controls, inView1, inView2]);
 
   return (
     <div className="py-16 relative about" id="about" style={{ backgroundColor: '#020b12' }}>
@@ -48,7 +41,7 @@ export default function About() {
         <motion.div
           className="absolute inset-0 flex justify-center items-center z-0"
           initial="hidden"
-          animate={controls1}
+          animate={controls}
           variants={fadeInUp}
           transition={{ duration: 1 }}
         >
@@ -64,7 +57,7 @@ export default function About() {
                   style={{ color: '#E292E7' }}
                   ref={ref1}
                   initial="hidden"
-                  animate={controls1}
+                  animate={controls}
                   variants={fadeInUp}
                   transition={{ duration: 1, delay: 0.7 }}
                 >
@@ -74,7 +67,7 @@ export default function About() {
                   className="lg:text-lg text-m text-justify"
                   style={{ color: '#EEE8DA' }}
                   initial="hidden"
-                  animate={controls1}
+                  animate={controls}
                   variants={fadeInUp}
                   transition={{ duration: 1, delay: 0.7 }}
                 >
@@ -94,7 +87,7 @@ export default function About() {
                 src={mulearnImage}
                 alt="MuLearn UCEK"
                 initial="hidden"
-                animate={controls1}
+                animate={controls}
                 variants={fadeIn}
                 transition={{ duration: 1, delay: 0.7 }}
               />
@@ -109,7 +102,7 @@ export default function About() {
                   style={{ color: '#E292E7' }}
                   ref={ref2}
                   initial="hidden"
-                  animate={controls2}
+                  animate={controls}
                   variants={fadeInUp}
                   transition={{ duration: 1, delay: 0.7 }}
                 >
@@ -119,7 +112,7 @@ export default function About() {
                   className="lg:text-lg text-m text-justify"
                   style={{ color: '#EEE8DA' }}
                   initial="hidden"
-                  animate={controls2}
+                  animate={controls}
                   variants={fadeInUp}
                   transition={{ duration: 1, delay: 0.7 }}
                 >
@@ -139,7 +132,7 @@ export default function About() {
                 src={hackathonImage}
                 alt="Hackathon"
                 initial="hidden"
-                animate={controls2}
+                animate={controls}
                 variants={fadeIn}
                 transition={{ duration: 1, delay: 0.7 }}
               />
