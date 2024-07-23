@@ -1,6 +1,5 @@
 import React, { Suspense, lazy, useState, useEffect } from 'react';
 import './index.css';
-import video from './video/video.mp4';
 
 // Lazily load components
 const Navbar = lazy(() => import('./Components/navbar'));
@@ -20,39 +19,20 @@ function App() {
   const [token, setToken] = useState(null);
 
   useEffect(() => {
-    const videoElement = document.querySelector('video');
-
-    const handleLoadedData = () => {
+    const timer = setTimeout(() => {
       setIsLoaded(true);
-    };
+    }, 3000); // Show loading animation for 3 seconds
 
-    if (videoElement) {
-      videoElement.addEventListener('loadeddata', handleLoadedData);
-    }
-
-    return () => {
-      if (videoElement) {
-        videoElement.removeEventListener('loadeddata', handleLoadedData);
-      }
-    };
+    return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div>
+    <div className='bg-[#020b12]'>
       {!isLoaded && (
         <Suspense fallback={<Loading />}>
           <Loading />
         </Suspense>
       )}
-      <video
-        autoPlay
-        loop
-        muted
-        className={`fixed inset-0 h-full w-full object-cover -z-10 ${isLoaded ? '' : 'hidden'}`}
-      >
-        <source src={video} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
       {isLoaded && (
         <Suspense fallback={<Loading />}>
           <Navbar />
