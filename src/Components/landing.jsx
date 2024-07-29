@@ -64,7 +64,7 @@ export default function Landing() {
           </motion.div>
 
           <motion.div 
-            className="mt-10  self-center space-y-34 "
+            className="mt-10 flex-col flex gap-4  self-center space-y-34 "
             initial="hidden" 
             animate="visible" 
             variants={fadeIn} 
@@ -78,7 +78,7 @@ export default function Landing() {
             ></div>
             <a
               href="#sponsor"
-              className=" rounded-md bg-white text-black border-2 px-3.5 py-2.5 lg:text-lg font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className=" rounded-md bg-white w-1/2 self-center text-black border-2 px-3.5 py-2.5 lg:text-lg font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               <a href="mailto:mulearnucek@gmail.com">Contact Us</a>
             </a>

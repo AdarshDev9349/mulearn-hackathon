@@ -6,12 +6,12 @@ import hackathonImage from './images/example.jpg';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
 };
 
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1 },
+  visible: { opacity: 1, transition: { duration: 0.8, ease: 'easeOut' } },
 };
 
 const staggerContainer = {
@@ -43,7 +43,6 @@ export default function About() {
           initial="hidden"
           animate={controls}
           variants={fadeInUp}
-          transition={{ duration: 1 }}
         >
           <motion.h1 className="custom-heading">ABOUT</motion.h1>
         </motion.div>
@@ -59,7 +58,7 @@ export default function About() {
                   initial="hidden"
                   animate={controls}
                   variants={fadeInUp}
-                  transition={{ duration: 1, delay: 0.7 }}
+                  transition={{ delay: 0.5 }}
                 >
                   About MuLearn UCEK
                 </motion.h2>
@@ -69,7 +68,7 @@ export default function About() {
                   initial="hidden"
                   animate={controls}
                   variants={fadeInUp}
-                  transition={{ duration: 1, delay: 0.7 }}
+                  transition={{ delay: 0.7 }}
                 >
                   Welcome to MuLearn UCEK, your gateway to transformative education. At MuLearn, we are dedicated to
                   revolutionizing education through a paradigm shift that empowers self-directed learning in a
@@ -89,7 +88,7 @@ export default function About() {
                 initial="hidden"
                 animate={controls}
                 variants={fadeIn}
-                transition={{ duration: 1, delay: 0.7 }}
+                transition={{ delay: 0.5 }}
               />
             </div>
           </div>
@@ -104,7 +103,7 @@ export default function About() {
                   initial="hidden"
                   animate={controls}
                   variants={fadeInUp}
-                  transition={{ duration: 1, delay: 0.7 }}
+                  transition={{ delay: 0.5 }}
                 >
                   About the Hackathon
                 </motion.h2>
@@ -114,7 +113,7 @@ export default function About() {
                   initial="hidden"
                   animate={controls}
                   variants={fadeInUp}
-                  transition={{ duration: 1, delay: 0.7 }}
+                  transition={{ delay: 0.7 }}
                 >
                   Welcome to Error 418, the inaugural 36-hour hackathon hosted by MuLearn UCEK. Building on our successful
                   events, Error 418 offers a dynamic platform for students to explore technology and innovation. This event
@@ -134,7 +133,7 @@ export default function About() {
                 initial="hidden"
                 animate={controls}
                 variants={fadeIn}
-                transition={{ duration: 1, delay: 0.7 }}
+                transition={{ delay: 0.5 }}
               />
             </div>
           </div>
