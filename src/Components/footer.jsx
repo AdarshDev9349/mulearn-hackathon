@@ -29,7 +29,7 @@ const Footer = () => {
               href="#"
               className="text-base leading-6 text-white hover:text-gray-400"
             >
-              Stacks
+              Tracks
             </a></Scroll>
           </div>
           <div className="px-5 py-2">

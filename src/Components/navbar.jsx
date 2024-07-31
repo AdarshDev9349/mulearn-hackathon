@@ -9,7 +9,7 @@ import { Link as Scroll } from 'react-scroll';
 const navigation = [
   { name: 'Home', href: '#',to:'home' },
   { name: 'About', href: '#about',to:'about' },
-  { name: 'Stacks', href: '#',to:'stacks' },
+  { name: 'Tracks', href: '#',to:'stacks' },
   { name: 'Timeline', href: '#',to:'time' },
   { name: 'FAQ', href: '#',to:'faq' },
 ];

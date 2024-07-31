@@ -3,18 +3,33 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const stacks = [
-  { title: "Stay Tuned..", description: "ERROR_418" },
+
   {
-    title: "Stay Tuned..",
-    description: "ERROR_418",
+    title: "Blockchain",
+    description: "Dive into decentralized applications and smart contracts using platforms like Ethereum and Polygon. Participants utilizing Polygon in their projects can earn a $200 bounty, while those leveraging Ethereum can win a $100 bounty for exceptional hacks."
   },
-  { title: "Stay Tuned..", description: "ERROR_418" },
-  { title: "Stay Tuned..", description: "ERROR_418" },
-  { title:"Stay Tuned..", description: "ERROR_418" },
   {
-    title:"Stay Tuned..",
-    description: "Automate and improve development processes.",
+    title: "Open Innovation",
+    description: "Encourage creative solutions across various domains without any specific constraints. This stack is perfect for those who thrive on unrestricted problem-solving and innovative thinking."
   },
+  {
+    title: "Sustainability",
+    description: "Develop tech solutions aimed at promoting environmental sustainability and addressing ecological challenges. Projects can range from energy-efficient systems to waste management innovations."
+  },
+  {
+    title: "LLMs (Large Language Models)",
+    description: "Create applications leveraging the power of advanced language models for tasks like natural language processing, text generation, and conversational AI. This stack focuses on the intersection of AI and linguistics."
+  },
+  {
+    title: "IoT (Internet of Things)",
+    description: "Build interconnected systems and devices that communicate seamlessly to provide intelligent and automated solutions. This stack emphasizes smart devices and real-time data exchange."
+  },
+  {
+    title: "Health Tech",
+    description: "Innovate within the healthcare sector by developing applications that improve medical services, patient care, and health monitoring systems. This stack is dedicated to enhancing the quality and accessibility of healthcare through technology."
+  }
+
+
 ];
 
 const Stacks = () => {
@@ -102,7 +117,7 @@ const Stacks = () => {
       className="relative py-16 bg-[#020b12]"
     >
       <div className="absolute inset-0 flex justify-center items-center z-0">
-        <h1 className="custom-heading2">STACKS</h1>
+        <h1 className="custom-heading2">TRACK</h1>
       </div>
       <motion.div
         variants={containerVariants}

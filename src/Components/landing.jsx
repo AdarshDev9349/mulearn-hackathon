@@ -1,4 +1,5 @@
-import React from 'react';
+// Landing.js
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Timer from "./timer";
 import ScrollToBottom from "./arrow";
@@ -14,17 +15,24 @@ const fadeIn = {
   visible: { opacity: 1 }
 };
 
-export default function Landing() {
-  React.useEffect(() => {
+export default function Landing({ onLoaded }) {
+  useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://apply.devfolio.co/v2/sdk.js';
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
+
+    // Simulate a loading time for the landing component
+    const timer = setTimeout(() => {
+      onLoaded();
+    }, 2000); // Adjust the time as needed
+
     return () => {
       document.body.removeChild(script);
-    }
-  }, []);
+      clearTimeout(timer);
+    };
+  }, [onLoaded]);
 
   return (
     <div id='home' className="relative isolate px-6 pt-24 lg:px-8 lg:pt-12 lg:h-screen h-[90vh]">
@@ -89,7 +97,7 @@ export default function Landing() {
         aria-hidden="true"
         className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
       >
-        {/* Background animation or effects */}
+        
       </div>
       <ScrollToBottom />
     </div>
