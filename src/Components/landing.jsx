@@ -85,10 +85,10 @@ export default function Landing({ onLoaded }) {
               style={{ height: '44px', width: '312px' }}
             ></div>
             <a
-              href="#sponsor"
+              href="https://drive.google.com/file/d/1kYzmKqQSSAKOHwTIueLHeorDV725VCW6/view?usp=drive_link"
               className=" rounded-md bg-white w-1/2 self-center text-black border-2 px-3.5 py-2.5 lg:text-lg font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              <a href="mailto:mulearnucek@gmail.com">Contact Us</a>
+              <a href="https://drive.google.com/file/d/1kYzmKqQSSAKOHwTIueLHeorDV725VCW6/view?usp=drive_link">Sponsor Us</a>
             </a>
           </motion.div>
         </div>
