@@ -10,6 +10,7 @@ import FAQ from "./Components/faq";
 import Footer from "./Components/footer";
 import Loading from "./Components/loader";
 import Sponsors from "./Components/sponsors";
+import PrizePool from "./Components/price";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [token, setToken] = useState(null);
@@ -48,6 +49,7 @@ function App() {
           <Navbar />
           <Landing />
           <About /> 
+          <PrizePool/>
           <Stacks />
           <Sponsors/>
           <Timeline />

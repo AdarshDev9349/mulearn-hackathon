@@ -30,13 +30,13 @@ const Timeline = () => {
               className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2"
               style={{ color: "#EEE8DA" }}
             >
-              Timeline for the Hackathon
+              Timeline for the ERROR_418
             </p>
             <p
               className="text-sm md:text-base text-gray-50 mb-4"
               style={{ color: "#EEE8DA" }}
             >
-              Here’s your guide to the hackathon 2024 process. Go through all
+              Here’s your guide to Error_418 Hackathon. Go through all
               the steps to know the exact process of the event.
             </p>
             <a
@@ -76,7 +76,7 @@ const Timeline = () => {
                       className="mb-3 text-base text-yellow-300"
                       style={{ color: "#EEE8DA" }}
                     >
-                      19 July - 2 August, 2024
+                      1 - 15 August, 2024
                     </p>
                     <h4
                       className="mb-3 font-bold text-lg md:text-2xl"
@@ -88,7 +88,7 @@ const Timeline = () => {
                       className="text-sm md:text-base text-right leading-snug text-gray-50 text-opacity-100"
                       style={{ color: "#EEE8DA" }}
                     >
-                     Register for the hackathon as a team.Only one person from each team is required to register.Don't forget to join the whatsapp group for more updates.
+                      Register for the hackathon as a team. Only one person from each team is required to register. Don't forget to join the WhatsApp group for more updates.
                     </p>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ const Timeline = () => {
                       className="mb-3 text-base text-yellow-300"
                       style={{ color: "#EEE8DA" }}
                     >
-                      15 August, 2024
+                      19 August, 2024
                     </p>
                     <h4
                       className="mb-3 font-bold text-lg md:text-2xl"
@@ -138,7 +138,7 @@ const Timeline = () => {
                       className="mb-3 text-base text-yellow-300"
                       style={{ color: "#EEE8DA" }}
                     >
-                      24-25 August, 2024
+                      25 - 26 August, 2024
                     </p>
                     <h4
                       className="mb-3 font-bold text-lg md:text-2xl"
@@ -150,7 +150,7 @@ const Timeline = () => {
                       className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100"
                       style={{ color: "#EEE8DA" }}
                     >
-Participate in the hackathon on site. Check-in details and event locations will be communicated to you. Be prepared to showcase your skills and collaborate with fellow participants.
+                      Participate in the hackathon on site. Check-in details and event locations will be communicated to you. Be prepared to showcase your skills and collaborate with fellow participants.
                     </p>
                   </div>
                 </div>
@@ -169,7 +169,7 @@ Participate in the hackathon on site. Check-in details and event locations will 
                       className="mb-3 text-base text-yellow-300"
                       style={{ color: "#EEE8DA" }}
                     >
-                      26 August, 2024
+                      Date to be Announced
                     </p>
                     <h4
                       className="mb-3 font-bold text-lg md:text-2xl text-left"
@@ -181,9 +181,7 @@ Participate in the hackathon on site. Check-in details and event locations will 
                       className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100"
                       style={{ color: "#EEE8DA" }}
                     >
-                      The winners will be contacted by our team for their
-                      addresses and the winning goodies will be sent to their
-                      addresses.
+                      The winners will be contacted by our team.
                     </p>
                   </div>
                 </div>

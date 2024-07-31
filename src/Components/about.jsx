@@ -115,7 +115,7 @@ export default function About() {
                   variants={fadeInUp}
                   transition={{ delay: 0.7 }}
                 >
-                  Welcome to Error 418, the inaugural 36-hour hackathon hosted by MuLearn UCEK. Building on our successful
+                  Welcome to Error 418, the inaugural 24-hour hackathon hosted by MuLearn UCEK. Building on our successful
                   events, Error 418 offers a dynamic platform for students to explore technology and innovation. This event
                   brings together a collaborative community where participants can work on real projects, share knowledge,
                   and push the boundaries of what's possible. Whether you're a seasoned developer or a beginner, Error 418
