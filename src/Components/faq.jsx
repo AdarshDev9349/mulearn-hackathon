@@ -5,7 +5,7 @@ const FAQ = () => {
   const faqData = [
     {
       question: "What is the ERROR_418 Hackathon?",
-      answer: "Error 418 Hackathon is a 36-hour event hosted by MuLearn UCEK that brings together students to collaborate on real projects, share knowledge, and innovate in technology."
+      answer: "Error 418 Hackathon is a 24-hour event hosted by MuLearn UCEK that brings together students to collaborate on real projects, share knowledge, and innovate in technology."
     },
     {
       question: "Who can participate?",
