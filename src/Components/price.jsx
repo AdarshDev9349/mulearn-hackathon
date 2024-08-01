@@ -5,8 +5,8 @@ import { useInView } from "react-intersection-observer";
 const prizes = [
   {
     title: "Total Prize Pool",
-    amount: "₹60,000",
-    description: "A total prize pool of ₹60,000 awaits the best teams!"
+    amount: "₹50,000",
+    description: "A total prize pool of ₹50,000 awaits the best teams!"
   },
   {
     title: "Polygon Bounty",
