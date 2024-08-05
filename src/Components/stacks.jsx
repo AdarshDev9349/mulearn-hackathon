@@ -5,8 +5,8 @@ import { useInView } from "react-intersection-observer";
 const stacks = [
 
   {
-    title: "Blockchain",
-    description: "Dive into decentralized applications and smart contracts using platforms like Ethereum and Polygon. Participants utilizing Polygon in their projects can earn a $200 bounty, while those leveraging Ethereum can win a $100 bounty for exceptional hacks."
+    title: "Partner Tracks",
+    description: "Participants utilizing Polygon in their projects can earn a $200 bounty, while those leveraging Ethereum can win a $100 bounty for exceptional hacks."
   },
   {
     title: "Open Innovation",
