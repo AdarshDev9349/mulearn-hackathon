@@ -88,7 +88,7 @@ const Timeline = () => {
                       className="text-sm md:text-base text-right leading-snug text-gray-50 text-opacity-100"
                       style={{ color: "#EEE8DA" }}
                     >
-                      Register for the hackathon as a team. Only one person from each team is required to register. Don't forget to join the WhatsApp group for more updates.
+                      Register for the hackathon as a team through devfolio.
                     </p>
                   </div>
                 </div>
