@@ -76,7 +76,7 @@ const Timeline = () => {
                       className="mb-3 text-base text-yellow-300"
                       style={{ color: "#EEE8DA" }}
                     >
-                      1 - 15 August, 2024
+                      1 - 25 August, 2024
                     </p>
                     <h4
                       className="mb-3 font-bold text-lg md:text-2xl"
@@ -107,7 +107,7 @@ const Timeline = () => {
                       className="mb-3 text-base text-yellow-300"
                       style={{ color: "#EEE8DA" }}
                     >
-                      19 August, 2024
+                       1st September, 2024
                     </p>
                     <h4
                       className="mb-3 font-bold text-lg md:text-2xl"
@@ -138,7 +138,7 @@ const Timeline = () => {
                       className="mb-3 text-base text-yellow-300"
                       style={{ color: "#EEE8DA" }}
                     >
-                      25 - 26 August, 2024
+                      07 - 08 September, 2024
                     </p>
                     <h4
                       className="mb-3 font-bold text-lg md:text-2xl"
