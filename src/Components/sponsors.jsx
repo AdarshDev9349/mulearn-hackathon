@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import devfolio from './images/Devfolio_Logo-Colored.svg';
 import polygon from './images/Polygon_Logo-Colored.svg';
 import eth from './images/ethindia-dark.svg';
+import unibic from './images/logo_Red.svg';
 
 const Sponsors = () => {
   const [refGold, inViewGold] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -69,6 +70,27 @@ const Sponsors = () => {
               <img
                 src={eth}
                 alt="ETHINDIA LOGO"
+                className="mx-auto py-5 px-5 w-[200px]"
+              />
+            </a>
+          </motion.div>
+        </div>
+      </div>
+      <div className="text-center mb-12 mt-12">
+        <h2 className="text-3xl text-white font-bold mb-10">Cookie Partner</h2>
+        <div className="flex justify-center">
+          <motion.div
+            ref={refGold}
+            initial="hidden"
+            animate={inViewGold ? 'visible' : 'hidden'}
+            variants={animationVariants}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            className="max-w-xs bg-white"
+          >
+            <a href="https://devfolio.co">
+              <img
+                src={unibic}
+                alt="DEVFOLIO LOGO"
                 className="mx-auto py-5 px-5 w-[200px]"
               />
             </a>
